@@ -4,11 +4,11 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class DB {
-    private final String HOST = "10.207.144.159";
+    private final String HOST = "127.0.0.1";
     private final String PORT = "3306";
-    private final String DB_NAME = "user060_user1";
-    private final String LOGIN = "user060"; // Если OpenServer, то здесь mysql напишите
-    private final String PASS = "70144"; // Если OpenServer, то здесь mysql напишите
+    private final String DB_NAME = "user060_db1";
+    private final String LOGIN = "root"; // Если OpenServer, то здесь mysql напишите
+    private final String PASS = ""; // Если OpenServer, то здесь mysql напишите
 
     private Connection dbConn = null;
     private Connection getDbConnection() throws ClassNotFoundException, SQLException {

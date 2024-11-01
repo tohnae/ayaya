@@ -7,9 +7,9 @@ import static java.sql.DriverManager.getConnection;
 public class DBUsers {
     private final String HOST = "192.168.13.100";
     private final String PORT = "3306";
-    private final String DB_NAME = "user19";
-    private final String LOGIN = "user19"; // Если OpenServer, то здесь mysql напишите
-    private final String PASS = "70144"; // Если OpenServer, то здесь mysql напишите
+    private final String DB_NAME = "user060_db1";
+    private final String LOGIN = "root"; // Если OpenServer, то здесь mysql напишите
+    private final String PASS = "1111"; // Если OpenServer, то здесь mysql напишите
 
     private Connection dbConn = null;
     private Connection getDbConnection() throws ClassNotFoundException, SQLException {
