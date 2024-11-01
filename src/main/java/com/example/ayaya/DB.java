@@ -8,7 +8,7 @@ public class DB {
     private final String PORT = "3306";
     private final String DB_NAME = "user060_db1";
     private final String LOGIN = "root"; // Если OpenServer, то здесь mysql напишите
-    private final String PASS = ""; // Если OpenServer, то здесь mysql напишите
+    private final String PASS = "1111"; // Если OpenServer, то здесь mysql напишите
 
     private Connection dbConn = null;
     private Connection getDbConnection() throws ClassNotFoundException, SQLException {
