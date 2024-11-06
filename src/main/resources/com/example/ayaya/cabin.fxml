@@ -6,11 +6,11 @@
 
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ayaya.Cabin">
-    <children>
-        <Label layoutX="176.0" layoutY="135.0" text="Личный кабинет">
-            <font>
-                <Font size="30.0" />
-            </font>
-        </Label>
-    </children>
+   <children>
+      <Label layoutX="176.0" layoutY="135.0" text="Личный кабинет">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

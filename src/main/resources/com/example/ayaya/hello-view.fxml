@@ -4,23 +4,42 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ayaya.HelloController">
-    <children>
-        <Label layoutX="194.0" layoutY="30.0" prefHeight="33.0" prefWidth="212.0" text="Список студентов">
-            <font>
-                <Font size="23.0" />
-            </font>
-        </Label>
-        <TextField fx:id="idfam" layoutX="197.0" layoutY="63.0" prefHeight="26.0" prefWidth="199.0" />
-        <Button fx:id="idadd" layoutX="227.0" layoutY="111.0" mnemonicParsing="false" text="Добавить студента" />
-        <ScrollPane layoutY="157.0" prefHeight="243.0" prefWidth="609.0">
-            <content>
-                <ListView fx:id="idspis" prefHeight="234.0" prefWidth="574.0" />
-            </content>
-        </ScrollPane>
-    </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ayaya.HelloController">
+  <children>
+      <Label fx:id="signUser" layoutX="180.0" layoutY="30.0" text="Label" />
+      <Label ellipsisString="" layoutX="34.0" layoutY="30.0" text="Добро пожаловать" />
+    <Label layoutX="34.0" layoutY="52.0" prefHeight="33.0" prefWidth="291.0" text="Список заявок">
+      <font>
+        <Font size="23.0" />
+      </font>
+    </Label>
+    <TextField fx:id="idfam" layoutX="35.0" layoutY="94.0" prefHeight="26.0" prefWidth="271.0" />
+    <Button fx:id="idadd" layoutX="35.0" layoutY="131.0" mnemonicParsing="false" text="Добавить заявку" />
+    <ScrollPane layoutX="464.0" layoutY="30.0" prefHeight="142.0" prefWidth="448.0">
+      <content>
+        <ListView fx:id="idspis" prefHeight="144.0" prefWidth="446.0" />
+      </content>
+    </ScrollPane>
+      <TableView fx:id="tableReq" layoutX="34.0" layoutY="178.0" prefHeight="200.0" prefWidth="881.0">
+        <columns>
+          <TableColumn fx:id="requestIDColumn" prefWidth="30.0" text="RequestID" />
+          <TableColumn fx:id="startDateColumn" prefWidth="92.0" text="StartDate" />
+            <TableColumn fx:id="homeTechTypeColumn" prefWidth="105.0" text="HomeTechType" />
+            <TableColumn fx:id="homeTechModelColumn" prefWidth="121.0" text="HomeTechModel" />
+            <TableColumn fx:id="problemDescryptionColumn" minWidth="8.0" prefWidth="90.0" text="ProblemDescryption" />
+            <TableColumn fx:id="requestStatusColumn" prefWidth="86.0" text="RequestStatus" />
+            <TableColumn fx:id="completionDateColumn" prefWidth="97.0" text="СompletionDate" />
+            <TableColumn fx:id="repairPartsColumn" prefWidth="116.0" text="RepairParts" />
+            <TableColumn fx:id="masterIDColumn" prefWidth="65.0" text="MasterID" />
+            <TableColumn fx:id="clientIDColumn" prefWidth="72.0" text="ClientID" />
+        </columns>
+      </TableView>
+      <Button layoutX="216.0" layoutY="131.0" mnemonicParsing="false" text="Статистика" />
+  </children>
 </AnchorPane>
